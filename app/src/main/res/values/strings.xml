@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">InterNewsLogin</string>
+    <string name="nombre_Titulo">InterNews</string>
+    <string name="tecnologicoXalapa">Instituto Tecnologico Superior de Xalapa.</string>
+    <string name="correo">Usuario.</string>
+    <string name="contraseña">Contraseña.</string>
+    <string name="btnIngresa">Ingresa a tu cuenta.</string>
+    <string name="contraseña_perdia">¿Olvidaste tu contraseña?</string>
+    <string name="numeroC">Numero de control</string>
+    <string name="nombre">Nombre(s)</string>
+    <string name="apellidoP">Apellido paterno.</string>
+    <string name="apellodpM">Apellido materno</string>
+    <string name="cargo">Cargo.</string>
+    <string name="alumnno">Alumno</string>
+    <string name="docente">Docente</string>
+    <string name="correoI">Correo institucional</string>
+    <string name="carrera">Carrera.</string>
+    <string name="contraseñan">Contraseña</string>
+    <string name="contraseñaC">Confirmar contraseña</string>
+    <string name="registrase">Registrarse</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menuConvocatoria"
+            android:icon="@drawable/ic_person_black_48dp"
+            android:title="Convocatorias"/>
+        <item android:id="@+id/menuEventos"
+            android:icon="@drawable/ic_sort_black_24dp"
+            android:title="Eventos"/>
+        <item android:id="@+id/menuBecas"
+            android:icon="@drawable/ic_sort_black_24dp"
+            android:title="Becas"/>
+        <item android:id="@+id/menuGen"
+            android:icon="@drawable/ic_sort_black_24dp"
+            android:title="Inicio"/>
+    </group>
+    <item android:id="@+id/opcionesPersona"
+        android:title="Perfil">
+        <menu>
+            <item android:id="@+id/datosPersona"
+                android:icon="@drawable/ic_person_black_48dp"
+                android:title="Perfil"/>
+            <item android:id="@+id/chat"
+                android:icon="@drawable/ic_chat_black_48dp"
+                android:title="Chat"/>
+            <item android:id="@+id/misActividades"
+                android:icon="@drawable/ic_content_paste_black_48dp"
+                android:title="Mis actividades"/>
+        </menu>
+    </item>
+
+</menu>

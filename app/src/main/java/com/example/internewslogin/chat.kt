@@ -38,7 +38,7 @@ class chat : AppCompatActivity() {
         val index = Random.nextInt(1)
         chat.add(index, Chat(mensaje.text.toString()))
         adapter.notifyItemInserted(index)
-        rvChat.scrollToPosition(-1)
+        rvChat.scrollToPosition(index)
 
     }
     private fun initToolBar(){

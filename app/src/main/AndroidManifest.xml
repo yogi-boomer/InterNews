@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InterNewsLogin">
-        <activity android:name=".chat"></activity>
+        <activity android:name=".actividadesInscritas"></activity>
+        <activity android:name=".misActividades2" />
+        <activity android:name=".chat" />
         <activity android:name=".recuperarPassword" />
         <activity android:name=".formRegistroActividad" />
         <activity android:name=".formResumen" />

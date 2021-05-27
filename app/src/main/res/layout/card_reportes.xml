@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textoTileReportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A000000"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Retos sustentables."/>
+
+    <Button
+        android:id="@+id/botonModificarReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoTileReportes"
+        android:text="Modificar Contenido."/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

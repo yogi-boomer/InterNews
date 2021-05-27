@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 
 class becas_Activity : AppCompatActivity() {
     val actividad: List<Actividad> = listOf(
-        Actividad("Beca Manutencion", "Se abre inscripcion a beca de manutención..", R.drawable.ejemplo2),
+        Actividad("Beca Manutención", "Se abre inscripcion a beca de manutención..", R.drawable.ejemplo2),
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +57,8 @@ class becas_Activity : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.misActividades ->{
-                Toast.makeText(this, "eventos", Toast.LENGTH_SHORT).show()
-                var intent: Intent = Intent(this, convocatorias_Activity::class.java)
+                Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show()
+                var intent: Intent = Intent(this, actividadesInscritas::class.java)
                 startActivity(intent)
             }
             R.id.datosPersona -> {

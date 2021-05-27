@@ -57,8 +57,8 @@ class eventos_Activity : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.misActividades ->{
-                Toast.makeText(this, "eventos", Toast.LENGTH_SHORT).show()
-                var intent: Intent = Intent(this, convocatorias_Activity::class.java)
+                Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show()
+                var intent: Intent = Intent(this, actividadesInscritas::class.java)
                 startActivity(intent)
             }
             R.id.datosPersona -> {

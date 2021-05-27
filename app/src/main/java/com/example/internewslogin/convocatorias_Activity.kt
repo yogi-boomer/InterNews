@@ -66,6 +66,11 @@ class convocatorias_Activity : AppCompatActivity() {
                 var intent: Intent = Intent(this, chat::class.java)
                 startActivity(intent)
             }
+            R.id.misActividades ->{
+                Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show()
+                var intent: Intent = Intent(this, actividadesInscritas::class.java)
+                startActivity(intent)
+            }
         }
         return true
     }

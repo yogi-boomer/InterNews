@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_View"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textoTileMisActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6A000000"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Retos sustentables."/>
+        <TextView
+            android:id="@+id/descripcionMisActividades"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoTileMisActividades"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Fechas de entrega de reporte:\n 12/06/2021, \n 29/06/2021."/>
+        <Button
+            android:id="@+id/botonCrearReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descripcionMisActividades"
+            android:text="Ver reportes"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

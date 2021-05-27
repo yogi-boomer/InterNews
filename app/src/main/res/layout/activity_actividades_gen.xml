@@ -16,19 +16,54 @@
             android:id="@+id/imgVi"
             android:src="@drawable/ejemplo1"/>
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fechas de inicio: 12/06/2021. \nFecha de finalización: 29/06/2021."
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Estado: En progreso."
+            android:layout_margin="10dp"/>
+
+        <TextView
             android:id="@+id/tituloActividad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="PUREBA"
+            android:text="Retos sustenables. "
             android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carreras participantes: Mecanica indistrial y ingenieria civil."
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semestres participantes: 5°, 6°, 7°."
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/preguntasAct"
             android:layout_width="match_parent"
@@ -45,6 +80,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
+            android:layout_margin="10dp"
             android:text="What is Lorem Ipsum?\n
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s \n\nWhy do we use it\n
 
@@ -53,6 +89,7 @@ It is a long established fact that a reader will be distracted by the readable c
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Archivos relacionados:"
+            android:layout_margin="10dp"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -62,13 +99,16 @@ It is a long established fact that a reader will be distracted by the readable c
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_content_copy_black_48dp"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:layout_margin="30dp"/>
             <Button
                 android:id="@+id/btInscribir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Inscribirse"
-                android:layout_marginTop="20dp"/>
+                android:padding="10dp"
+                android:layout_margin="30dp"/>
 
     </LinearLayout>
 

@@ -79,7 +79,7 @@ class chat : AppCompatActivity() {
             }
             R.id.misActividades ->{
                 Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show()
-                var intent: Intent = Intent(this, nuevoReporte::class.java)
+                var intent: Intent = Intent(this, actividadesInscritas::class.java)
                 startActivity(intent)
             }
         }

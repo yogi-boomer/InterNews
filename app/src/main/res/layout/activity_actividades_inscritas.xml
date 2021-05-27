@@ -5,5 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".actividadesInscritas">
+    <LinearLayout
+        android:id="@+id/linearLayout231455"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+        <TextView
+            android:id="@+id/textoCentral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis actividades."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMisActividades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

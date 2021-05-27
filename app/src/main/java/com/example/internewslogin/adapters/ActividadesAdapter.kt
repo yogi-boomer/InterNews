@@ -17,7 +17,6 @@ class actividadesAdapter(val actividades: List<Actividad>): RecyclerView.Adapter
             itemView.textoTile.text = actvidades.titulo
             itemView.descripcion.text = actvidades.descripcion
             itemView.imgBackgrond.setImageResource(actvidades.img)
-
         }
         init {
             itemView.btnInformacion.setOnClickListener {

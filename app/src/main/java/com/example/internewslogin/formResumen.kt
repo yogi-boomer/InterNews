@@ -35,6 +35,9 @@ class formResumen : AppCompatActivity() {
         btnGuardar.setOnClickListener {
             Toast.makeText(this, "Guardando", Toast.LENGTH_SHORT).show()
         }
+        btnEnviar.setOnClickListener {
+            Toast.makeText(this, "Enviando el reporte", Toast.LENGTH_SHORT).show()
+        }
         btnCancelar.setOnClickListener {
             var intent: Intent = Intent(this, nuevoReporte::class.java)
             startActivity(intent)

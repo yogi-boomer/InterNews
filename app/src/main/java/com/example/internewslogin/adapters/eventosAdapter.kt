@@ -15,7 +15,6 @@ class eventosAdapter (val actividades: List<Actividad>): RecyclerView.Adapter<ev
         fun data(actividad: Actividad){
             itemView.textoTile2.text = actividad.titulo
             itemView.descripcion2.text = actividad.descripcion
-            itemView.imgBackgrond2.setImageResource(actividad.img)
         }
         init {
             itemView.btnInformacion2.setOnClickListener {

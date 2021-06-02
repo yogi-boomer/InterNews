@@ -8,15 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.internewslogin.activities.perfil
-import com.example.internewslogin.adapters.convocatoriasAdapter
-import com.example.internewslogin.dataClases.Actividad
 import kotlinx.android.synthetic.main.activity_becas_.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class becas_Activity : AppCompatActivity() {
-    val actividad: List<Actividad> = listOf(
-        Actividad("Beca Manutención", "Se abre inscripcion a beca de manutención..", R.drawable.ejemplo2),
-    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_becas_)
@@ -25,8 +21,8 @@ class becas_Activity : AppCompatActivity() {
     }
     private  fun setUpRecyclerView(){
         rvBecas.layoutManager= LinearLayoutManager(this)
-        val adapter = convocatoriasAdapter(actividad)
-        rvBecas.adapter = adapter
+      //  val adapter = convocatoriasAdapter(actividad)
+        //rvBecas.adapter = adapter
     }
 
     private fun initToolBar(){

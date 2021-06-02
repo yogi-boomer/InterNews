@@ -8,15 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.internewslogin.activities.perfil
-import com.example.internewslogin.adapters.actividadesAdapter
-import com.example.internewslogin.dataClases.Actividad
 import kotlinx.android.synthetic.main.activity_convocatorias_.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class convocatorias_Activity : AppCompatActivity() {
-    val actividad: List<Actividad> = listOf(
-        Actividad("Retos Sustentables", "Participa en los retos sustentables con tus compañeros y profesores...", R.drawable.ejemplo1),
-        )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_convocatorias_)
@@ -25,8 +21,8 @@ class convocatorias_Activity : AppCompatActivity() {
     }
     private  fun setUpRecyclerView(){
         rvConvocatorias.layoutManager= LinearLayoutManager(this)
-        val adapter = actividadesAdapter(actividad)
-        rvConvocatorias.adapter = adapter
+     //   val adapter = actividadesAdapter(actividad)
+       // rvConvocatorias.adapter = adapter
     }
 
     private fun initToolBar(){

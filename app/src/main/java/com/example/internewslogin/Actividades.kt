@@ -13,17 +13,14 @@ import com.example.internewslogin.dataClases.Actividad
 import com.example.internewslogin.interfaces.ApiGet
 import kotlinx.android.synthetic.main.activity_actividades.*
 import kotlinx.android.synthetic.main.toolbar.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+const val BASE_URL = "http://7504eb61641d.ngrok.io/"
 class Actividades : AppCompatActivity(){
     private lateinit var adapter : actividadesAdapter
     private var actividades = mutableListOf<Actividad>()
-
+    private var TAG = "actividades"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,42 +29,35 @@ class Actividades : AppCompatActivity(){
         setUpRecyclerView()
 
     }
-    private fun getRetrofit():Retrofit{
-        return Retrofit.Builder()
-            .baseUrl("http://b5b22fe6daf3.ngrok.io/")
+
+    private fun getCurrentData(){
+        val api= Retrofit.Builder()
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+            .create(ApiGet::class.java)
+
+
+
     }
-    private fun searchConvocatorias(){
-        CoroutineScope(Dispatchers.IO).launch {
-            val call: Response<Actividad> = getRetrofit().create(ApiGet::class.java).getConvocatorias("/announs/movil")
-            val convocatorias: Actividad? = call.body()
-            runOnUiThread {
-                if (call.isSuccessful){
-                    //show in recyclerview
-                    var conv: List<Actividad> = (convocatorias?.titulo ?: emptyList<Actividad>()) as List<Actividad>
-                    actividades.clear()
-                    actividades.addAll(conv)
-                    adapter.notifyDataSetChanged()
-
-                }else{
-                    //show error
-                    showError()
-                }
-            }
-
-        }
-    }
-
     private fun showError() {
         Toast.makeText(this, "Error con el servidor", Toast.LENGTH_SHORT).show()
     }
 
     private  fun setUpRecyclerView(){
+        getCurrentData()
         rvActividades.layoutManager= LinearLayoutManager(this)
         adapter = actividadesAdapter(actividades)
         rvActividades.adapter = adapter
     }
+
+
+
+
+
+
+
+
 
      private fun initToolBar(){
         setSupportActionBar(toolbar)

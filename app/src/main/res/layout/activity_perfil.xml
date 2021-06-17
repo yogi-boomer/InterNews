@@ -10,27 +10,49 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="Perfil"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:text="@string/nombre"
-            android:layout_marginLeft="50sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/apellidoEditEdit"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="20dp"
-            android:hint="Luis Fernando"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Perfil"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/nombre"
+                android:layout_marginLeft="50sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/nombrePerfil"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:enabled="false"
+                    android:hint="Luis Fernando" />
+
+                <Button
+                    android:id="@+id/btnEditarNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✏"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,13 +60,30 @@
             android:textSize="15sp"
             android:text="@string/apellidoP"
             android:layout_marginLeft="50sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/apellidoPerfil"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:id="@+id/apellidoEdit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:hint="Vazquez"/>
+            android:enabled="false"
+            android:hint="Vazquez" />
+        <Button
+            android:id="@+id/btnEditarApellidoP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,13 +91,28 @@
             android:textSize="15sp"
             android:text="@string/apellodpM"
             android:layout_marginLeft="50sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/apellidoMPerfil"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:id="@+id/apellido2Edit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:hint="Ceballos"/>
+            android:enabled="false"
+            android:hint="Ceballos" />
+        <Button
+            android:id="@+id/btnEditarApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,14 +120,16 @@
             android:textSize="15sp"
             android:text="@string/numeroC"
             android:layout_marginLeft="50sp"/>
+
         <EditText
+            android:id="@+id/numeroControlPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/nombreEdit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:enabled="true"
-            android:hint="18O03019"/>
+            android:editable="false"
+            android:enabled="false"
+            android:hint="18O03019" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,14 +137,16 @@
             android:textSize="15sp"
             android:text="@string/correoI"
             android:layout_marginLeft="50sp"/>
+
         <EditText
+            android:id="@+id/correoPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/correoEdit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:enabled="true"
-            android:hint="18O03019@itsx.edu.mx"/>
+            android:editable="false"
+            android:enabled="false"
+            android:hint="18O03019@itsx.edu.mx" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,14 +154,16 @@
             android:textSize="15sp"
             android:text="@string/cargo"
             android:layout_marginLeft="50sp"/>
+
         <EditText
+            android:id="@+id/cargpPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cargpEdit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:enabled="true"
-            android:hint="Estuduiante"/>
+            android:editable="false"
+            android:enabled="false"
+            android:hint="Estuduiante" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,13 +171,16 @@
             android:textSize="15sp"
             android:text="@string/carrera"
             android:layout_marginLeft="50sp"/>
+
         <EditText
+            android:id="@+id/carreraPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/carreraEdit"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
-            android:hint="Ingenieria en sistemas computacionales."/>
+            android:editable="false"
+            android:enabled="false"
+            android:hint="Ingenieria en sistemas computacionales." />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,6 +188,13 @@
             android:id="@+id/btnCambio"
             android:layout_gravity="center"
             android:text="GUARDAR CAMBIOS"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSalir"
+            android:layout_gravity="center"
+            android:text="salir"
+            android:layout_marginBottom="20dp"/>
     </LinearLayout>
 
 

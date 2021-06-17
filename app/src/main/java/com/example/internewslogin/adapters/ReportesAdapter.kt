@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.card_reportes.view.*
 class ReportesAdapter(val reportes: List<Reporte>): RecyclerView.Adapter<ReportesAdapter.reportesHolder>() {
     class reportesHolder(view: View): RecyclerView.ViewHolder(view){
         fun data(reporte : Reporte){
-            itemView.textoTileReportes.text = reporte.titulosReporte
+            itemView.textoTileReportes.text = reporte.titulo
         }
         init {
                 itemView.botonModificarReporte.setOnClickListener {

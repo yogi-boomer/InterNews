@@ -35,6 +35,8 @@
             android:hint="@string/nombre"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
             android:id="@+id/nombreRegist"/>
         <TextView
             android:layout_width="wrap_content"
@@ -45,13 +47,16 @@
             android:textColor="@color/black"
             android:text="@string/apellidoP"
             android:layout_marginLeft="20dp"/>
+
         <EditText
+            android:id="@+id/apellidoRegist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/apellidoP"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:id="@+id/apellidoRegist"/>
+            android:editable="false"
+            android:enabled="false"
+            android:hint="@string/apellidoP" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +72,8 @@
             android:hint="@string/apellodpM"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
             android:id="@+id/apellidoPRegist"/>
         <TextView
             android:layout_width="wrap_content"
@@ -83,8 +90,11 @@
             android:hint="@string/numeroC"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
             android:id="@+id/numeroCRegist"/>
         <TextView
+            android:id="@+id/textoVariable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -93,12 +103,18 @@
             android:textColor="@color/black"
             android:text="carrera"
             android:layout_marginLeft="20dp"/>
-        <Spinner
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinerRegisCarreras"
-            android:layout_marginLeft="20dp"/>
+            android:hint="@string/numeroC"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
+            android:id="@+id/carreraRegist"/>
+
         <TextView
+            android:id="@+id/txtSem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -107,11 +123,15 @@
             android:textColor="@color/black"
             android:text="semestre"
             android:layout_marginLeft="20dp"/>
-        <Spinner
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinerRegisSemestre"
-            android:layout_marginLeft="20dp"/>
+            android:hint="@string/numeroC"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
+            android:id="@+id/semestreRegist"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,6 +147,8 @@
             android:hint="{Nombre Actividad}"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:editable="false"
+            android:enabled="false"
             android:id="@+id/nombreActRegist"/>
         <TextView
             android:layout_width="wrap_content"

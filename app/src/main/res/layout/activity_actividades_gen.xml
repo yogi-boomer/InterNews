@@ -15,22 +15,80 @@
             android:layout_height="251dp"
             android:id="@+id/imgVi"
             android:src="@drawable/ejemplo1"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fechas de inicio: 12/06/2021. \nFecha de finalización: 29/06/2021."
-            android:layout_margin="10dp"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:text="Estado: En progreso."
-            android:layout_margin="10dp"/>
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fechas de inicio:"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fecha"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fechas de inicio:"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/textDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fecha"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:text="Estado:"
+              android:layout_margin="10dp"/>
+          <TextView
+              android:id="@+id/stateActivity"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:text="Estado: En progreso."
+              android:layout_margin="10dp"/>
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
 
         <TextView
             android:id="@+id/tituloActividad"
@@ -42,28 +100,59 @@
             android:text="Retos sustenables. "
             android:gravity="center"/>
         <TextView
+            android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textColor="@color/black"
             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             android:textSize="15sp"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Carreras participantes: Mecanica indistrial y ingenieria civil."
-            android:layout_margin="10dp"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <TextView
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carreras participantes:"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/idCarrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Semestres participantes: 5°, 6°, 7°."
-            android:layout_margin="10dp"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semestres participantes:"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/semestres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
         <TextView
             android:id="@+id/preguntasAct"
             android:layout_width="match_parent"
@@ -94,14 +183,13 @@ It is a long established fact that a reader will be distracted by the readable c
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20sp"/>
-        <ImageView
-                android:id="@+id/archivo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_content_copy_black_48dp"
-                android:layout_marginTop="30dp"
-                android:padding="10dp"
-                android:layout_margin="30dp"/>
+        <TextView
+            android:id="@+id/archivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
             <Button
                 android:id="@+id/btInscribir"
                 android:layout_width="match_parent"

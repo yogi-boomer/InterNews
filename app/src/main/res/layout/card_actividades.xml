@@ -37,7 +37,8 @@
             android:layout_below="@id/textoTile2"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:text="Participa en los retos sustentables junto con tus compañeros y profesores..."/>
+            android:text="Participa en los retos sustentables junto con tus compañeros y profesores..."
+            android:maxLines="2"/>
         <Button
             android:id="@+id/btnInformacion2"
             android:layout_width="match_parent"

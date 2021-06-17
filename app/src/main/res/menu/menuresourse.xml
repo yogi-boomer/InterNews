@@ -26,6 +26,8 @@
             <item android:id="@+id/misActividades"
                 android:icon="@drawable/ic_content_paste_black_48dp"
                 android:title="Mis actividades"/>
+            <item android:id="@+id/menuSalir"
+                android:title="Salir"/>
         </menu>
     </item>
 

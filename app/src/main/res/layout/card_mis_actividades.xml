@@ -11,6 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idconas"
+            android:text=""/>
+        <TextView
             android:id="@+id/textoTileMisActividades"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,12 +35,32 @@
             android:layout_below="@id/textoTileMisActividades"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:text="Fechas de entrega de reporte:\n 12/06/2021, \n 29/06/2021."/>
+            android:text="Fechas de entrega de reporte"/>
+        <TextView
+            android:id="@+id/fechasMisActividades"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descripcionMisActividades"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="{}"/>
+        <TextView
+            android:id="@+id/fechasMisActividades2"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fechasMisActividades"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="{}"/>
         <Button
             android:id="@+id/botonCrearReporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/descripcionMisActividades"
+            android:layout_below="@+id/fechasMisActividades2"
             android:text="Ver reportes"/>
 
 

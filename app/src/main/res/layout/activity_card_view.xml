@@ -16,25 +16,38 @@
             android:scaleType="centerCrop"
             android:id="@+id/imgBackgrond"
             android:src="@drawable/ejemplo1"/>
-        <TextView
-            android:id="@+id/textoTile"
+        <LinearLayout
+            android:id="@+id/linearTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/imgBackgrond"
-            android:background="#6A000000"
-            android:layout_alignParentStart="true"
-            android:gravity="center_horizontal"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:text="Retos sustentables."/>
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/imgBackgrond">
+            <TextView
+                android:id="@+id/textoTile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6A000000"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Retos sustentables."/>
+            <TextView
+                android:id="@+id/idActividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/descripcion"
             android:textSize="15sp"
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textoTile"
+            android:layout_below="@id/linearTitulo"
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="Participa en los retos sustentables junto con tus compañeros y profesores..."/>

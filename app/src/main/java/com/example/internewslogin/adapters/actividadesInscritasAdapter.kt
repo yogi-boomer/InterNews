@@ -7,18 +7,23 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.internewslogin.R
 import com.example.internewslogin.dataClases.ActividadInscrita
-import com.example.internewslogin.nuevoReporte
+import com.example.internewslogin.reportView
 import kotlinx.android.synthetic.main.card_mis_actividades.view.*
 
-class actividadesInscritasAdapter(val actividadesIns: List<ActividadInscrita>):RecyclerView.Adapter<actividadesInscritasAdapter.actividadesInsHolder>() {
+class actividadesInscritasAdapter(val actividadesIns: MutableList<ActividadInscrita>):RecyclerView.Adapter<actividadesInscritasAdapter.actividadesInsHolder>() {
     class actividadesInsHolder(view: View): RecyclerView.ViewHolder(view) {
         fun data(actividadesIns: ActividadInscrita){
             itemView.textoTileMisActividades.text = actividadesIns.titulo
-            itemView.descripcionMisActividades.text = actividadesIns.fechas
+            itemView.fechasMisActividades.text = actividadesIns.fecha_ini_repo
+            itemView.fechasMisActividades2.text = actividadesIns.fecha_fin_repo
+            itemView.idconas.text = actividadesIns.id_conv
         }
         init {
                 itemView.botonCrearReporte.setOnClickListener {
-                    val intent: Intent = Intent(itemView.context, nuevoReporte::class.java)
+                    val intent: Intent = Intent(itemView.context, reportView::class.java)
+                    intent.putExtra("id_convo",itemView.idconas.text.toString())
+                    intent.putExtra("fecha_ini",itemView.fechasMisActividades.text.toString())
+                    intent.putExtra("fecha_fin",itemView.fechasMisActividades2.text.toString())
                     itemView.context.startActivity(intent)
                 }
         }

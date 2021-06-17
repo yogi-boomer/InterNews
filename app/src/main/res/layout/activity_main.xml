@@ -72,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/noControl"
         android:layout_width="312dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
@@ -82,6 +82,7 @@
         android:ems="10"
         android:hint="@string/numeroC"
         android:inputType="textEmailAddress"
+        app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/noControl" />
 
     <EditText
         android:id="@+id/editTextContraseña"
@@ -112,6 +113,7 @@
         android:ems="10"
         android:hint="@string/contraseña"
         android:inputType="textPassword"
+        app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"

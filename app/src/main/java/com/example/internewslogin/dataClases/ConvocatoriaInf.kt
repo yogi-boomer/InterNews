@@ -13,5 +13,5 @@ data class ConvocatoriaInf(
     var fecha_ini: String,
     var fecha_fin: String,
     var fecha_ini_repo: String,
-    var fecha_fin_repo: String
+    var fecha_fin_repo: String,
 )

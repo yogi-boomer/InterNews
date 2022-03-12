@@ -162,10 +162,6 @@ class formRegistroActividad : AppCompatActivity() {
                 var intent: Intent = Intent(this, perfil::class.java)
                 startActivity(intent)
             }
-            R.id.chat -> {
-                var intent: Intent = Intent(this, chat::class.java)
-                startActivity(intent)
-            }
             R.id.misActividades -> {
                 var intent: Intent = Intent(this, actividadesInscritas::class.java)
                 startActivity(intent)

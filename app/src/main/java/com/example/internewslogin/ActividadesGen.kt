@@ -14,7 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val BASE_URL2 = "http://3c43d51b83ce.ngrok.io/"
+const val BASE_URL2 = "http://887e-177-240-166-31.ngrok.io/"
 class ActividadesGen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -26,7 +26,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fechas de inicio:"
+                    android:text="Fecha de Inicio:"
                     android:layout_margin="10dp"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -49,7 +49,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fechas de inicio:"
+                    android:text="Fecha de Finalización:"
                     android:layout_margin="10dp"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -87,9 +87,56 @@
               android:textColor="@color/black"
               android:text="Estado: En progreso."
               android:layout_margin="10dp"/>
+
       </androidx.appcompat.widget.LinearLayoutCompat>
 
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Empresa de convenio:"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/nombreConvActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Santander."
+                android:layout_margin="10dp"/>
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Viáticos:"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/viaticosEstadoActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Sí."
+                android:layout_margin="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
         <TextView
             android:id="@+id/tituloActividad"
             android:layout_width="match_parent"

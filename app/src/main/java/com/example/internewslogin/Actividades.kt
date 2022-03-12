@@ -22,7 +22,7 @@ import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-const val BASE_URL= "http://3c43d51b83ce.ngrok.io/"
+const val BASE_URL= "http://887e-177-240-166-31.ngrok.io/"
 var nombreUsuario:String = ""
 var apellidoUsuario:String = ""
 var apellidoMaterno:String = ""
@@ -50,7 +50,6 @@ class Actividades : AppCompatActivity(){
         setContentView(R.layout.activity_actividades)
         initToolBar()
         setUpRecyclerView()
-        Log.d("REVISION", dato)
         getInfoUser(dato)
     }
 
@@ -150,11 +149,7 @@ class Actividades : AppCompatActivity(){
                 var intent: Intent = Intent(this, perfil::class.java)
                 startActivity(intent)
             }
-            R.id.chat -> {
-                Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show()
-                var intent: Intent = Intent(this, chat::class.java)
-                startActivity(intent)
-            }
+
             R.id.misActividades -> {
                 var intent: Intent = Intent(this, actividadesInscritas::class.java)
                 startActivity(intent)
